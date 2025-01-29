@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join Our Team - Bright Futures Children’s Home</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&family=Quicksand:wght@400;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="logo.png" alt="Bright Futures Logo">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="services.html">Our Services</a></li>
+                    <li><a href="faqs.html">FAQs</a></li>
+                    <li><a href="join-our-team.html" class="active">Join Our Team</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="join-hero">
+        <div class="hero-content">
+            <h1>Join Our Team</h1>
+            <p>Become part of a family of professionals dedicated to providing high-standard care and service.</p>
+        </div>
+    </section>
+
+    <!-- Join Our Team Section -->
+    <section id="join-team">
+        <div class="container">
+            <h2>Join Our Team</h2>
+            <p>Our highly trained staff are ready to welcome new team members to grow our family of professionals who
+                provide a high standard of care and service to our service recipients.</p>
+            <p>You can explore available opportunities on the link below and submit an expression of interest if you
+                would like to join our team:</p>
+            <a href="#opportunities" class="cta-button">Explore Opportunities</a>
+        </div>
+    </section>
+
+    <!-- Expression of Interest Form -->
+    <section id="expression-of-interest">
+        <div class="container">
+            <h2>Submit an Expression of Interest</h2>
+            <form id="interest-form" action="#" method="POST" enctype="multipart/form-data">
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Why do you want to join our team?</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="resume">Upload Your Resume (PDF, DOC, DOCX)</label>
+                    <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx" required>
+                </div>
+                <div class="form-group">
+                    <label for="additional-files">Upload Additional Documents (Optional)</label>
+                    <input type="file" id="additional-files" name="additional-files" accept=".pdf,.doc,.docx">
+                </div>
+                <button type="submit" class="cta-button">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Bright Futures Children’s Home. All rights reserved.</p>
+            <div class="social-links">
+                <a href="#"><img src="facebook-icon.png" alt="Facebook"></a>
+                <a href="#"><img src="instagram-icon.png" alt="Instagram"></a>
+                <a href="#"><img src="twitter-icon.png" alt="Twitter"></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
