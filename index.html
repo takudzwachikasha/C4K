@@ -7,65 +7,75 @@
     <title>Sunshine Children's Home</title>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap"
+        rel="stylesheet">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
     <!-- Navigation Bar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-        <div class="container">
-            <a class="navbar-brand" href="#">
-                <img src="images/logo.png" alt="Sunshine Children's Home Logo" width="40" height="40"
-                    class="d-inline-block align-text-top">
-                Sunshine Children's Home
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#home">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#about">About Us</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#programs">Programs</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#donate">Donate</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact</a>
-                    </li>
-                </ul>
-            </div>
+<!-- Navigation Bar -->
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">
+            <img src="images/logo.png" alt="Sunshine Children's Home Logo" width="40" height="40"
+                class="d-inline-block align-text-top">
+            Sunshine Children's Home
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="services.html">Our Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="faqs.html">FAQs</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="join-us.html">Join Our Team</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="donate.html">Donate</a>
+                </li>
+            </ul>
         </div>
-    </nav>
-
+    </div>
+</nav>
     <!-- Hero Section -->
     <section id="home" class="hero-section d-flex align-items-center">
         <div class="container text-center text-white">
-            <h1 class="display-4">Welcome to Sunshine Children's Home</h1>
-            <p class="lead">Providing love, care, and hope to children in need.</p>
-            <a href="#donate" class="btn btn-primary btn-lg">Donate Now</a>
+            <h1 class="display-3 fw-bold">Welcome to Sunshine Children's Home</h1>
+            <p class="lead fs-4">Providing love, care, and hope to children in need.</p>
+            <a href="#donate" class="btn btn-primary btn-lg mt-3">Donate Now</a>
         </div>
     </section>
 
     <!-- About Us Section -->
-    <section id="about" class="py-5">
+    <section id="about" class="about-section py-5">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-md-6">
-                    <img src="images/about.jpg" alt="About Us" class="img-fluid rounded">
+                    <img src="images/about.jpg" alt="About Us" class="img-fluid rounded shadow">
                 </div>
                 <div class="col-md-6">
-                    <h2>About Us</h2>
-                    <p>Sunshine Children's Home is a safe haven for children who have faced adversity. We provide
-                        shelter, education, and emotional support to help them thrive.</p>
+                    <h2 class="fw-bold mb-4">About Us</h2>
+                    <p class="lead">Sunshine Children's Home is a safe haven for children who have faced adversity. We
+                        provide shelter, education, and emotional support to help them thrive.</p>
                     <a href="#programs" class="btn btn-outline-primary">Learn More</a>
                 </div>
             </div>
@@ -73,35 +83,35 @@
     </section>
 
     <!-- Programs Section -->
-    <section id="programs" class="py-5 bg-light">
+    <section id="programs" class="programs-section py-5 bg-light">
         <div class="container">
-            <h2 class="text-center mb-5">Our Programs</h2>
-            <div class="row">
-                <div class="col-md-4 text-center">
-                    <div class="card h-100">
+            <h2 class="text-center fw-bold mb-5">Our Programs</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card h-100 shadow">
                         <img src="images/education.jpg" class="card-img-top" alt="Education Program">
                         <div class="card-body">
-                            <h5 class="card-title">Education</h5>
+                            <h5 class="card-title fw-bold">Education</h5>
                             <p class="card-text">We provide quality education to ensure every child has a bright future.
                             </p>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4 text-center">
-                    <div class="card h-100">
+                <div class="col-md-4">
+                    <div class="card h-100 shadow">
                         <img src="images/healthcare.jpg" class="card-img-top" alt="Healthcare Program">
                         <div class="card-body">
-                            <h5 class="card-title">Healthcare</h5>
+                            <h5 class="card-title fw-bold">Healthcare</h5>
                             <p class="card-text">Access to healthcare services to keep our children healthy and strong.
                             </p>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4 text-center">
-                    <div class="card h-100">
+                <div class="col-md-4">
+                    <div class="card h-100 shadow">
                         <img src="images/counseling.jpg" class="card-img-top" alt="Counseling Program">
                         <div class="card-body">
-                            <h5 class="card-title">Counseling</h5>
+                            <h5 class="card-title fw-bold">Counseling</h5>
                             <p class="card-text">Emotional support and counseling to help children heal and grow.</p>
                         </div>
                     </div>
@@ -111,39 +121,16 @@
     </section>
 
     <!-- Donate Section -->
-    <section id="donate" class="py-5 text-white text-center">
+    <section id="donate" class="donate-section py-5 text-white text-center">
         <div class="container">
-            <h2>Make a Difference</h2>
-            <p>Your donation can change a child's life. Join us in making the world a better place.</p>
-            <a href="#" class="btn btn-primary btn-lg">Donate Now</a>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="py-5">
-        <div class="container">
-            <h2 class="text-center mb-5">Contact Us</h2>
-            <div class="row">
-                <div class="col-md-6 mx-auto">
-                    <form>
-                        <div class="mb-3">
-                            <input type="text" class="form-control" placeholder="Your Name" required>
-                        </div>
-                        <div class="mb-3">
-                            <input type="email" class="form-control" placeholder="Your Email" required>
-                        </div>
-                        <div class="mb-3">
-                            <textarea class="form-control" rows="5" placeholder="Your Message" required></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary">Send Message</button>
-                    </form>
-                </div>
-            </div>
+            <h2 class="fw-bold mb-4">Make a Difference</h2>
+            <p class="lead">Your donation can change a child's life. Join us in making the world a better place.</p>
+            <a href="#" class="btn btn-light btn-lg">Donate Now</a>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="bg-dark text-white text-center py-3">
+    <footer class="bg-dark text-white text-center py-4">
         <div class="container">
             <p>&copy; 2023 Sunshine Children's Home. All rights reserved.</p>
         </div>
