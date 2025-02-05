@@ -4,99 +4,132 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Join Our Team - Bright Futures Children’s Home</title>
+    <title>Join Our Team - Sunshine Children's Home</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&family=Quicksand:wght@400;700&display=swap"
-        rel="stylesheet">
 </head>
 
 <body>
-    <!-- Header -->
-    <header>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
         <div class="container">
-            <div class="logo">
-                <img src="logo.png" alt="Bright Futures Logo">
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About Us</a></li>
-                    <li><a href="services.html">Our Services</a></li>
-                    <li><a href="faqs.html">FAQs</a></li>
-                    <li><a href="join-our-team.html" class="active">Join Our Team</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+            <a class="navbar-brand" href="index.html">
+                <img src="images/logo.png" alt="Sunshine Children's Home Logo" width="40" height="40"
+                    class="d-inline-block align-text-top">
+                Sunshine Children's Home
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="services.html">Our Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="faqs.html">FAQs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="join-us.html">Join Our Team</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="donate.html">Donate</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
                 </ul>
-            </nav>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="join-us-header d-flex align-items-center">
+        <div class="container text-center text-white">
+            <h1 class="display-4">Join Our Team</h1>
+            <p class="lead">Become part of a family of professionals dedicated to providing high standards of care and
+                service.</p>
         </div>
     </header>
 
-    <!-- Hero Section -->
-    <section id="join-hero">
-        <div class="hero-content">
-            <h1>Join Our Team</h1>
-            <p>Become part of a family of professionals dedicated to providing high-standard care and service.</p>
-        </div>
-    </section>
-
     <!-- Join Our Team Section -->
-    <section id="join-team">
+    <section class="join-us-section py-5">
         <div class="container">
-            <h2>Join Our Team</h2>
-            <p>Our highly trained staff are ready to welcome new team members to grow our family of professionals who
-                provide a high standard of care and service to our service recipients.</p>
-            <p>You can explore available opportunities on the link below and submit an expression of interest if you
-                would like to join our team:</p>
-            <a href="#opportunities" class="cta-button">Explore Opportunities</a>
-        </div>
-    </section>
+            <div class="row">
+                <div class="col-md-8 mx-auto text-center">
+                    <h2>Explore Opportunities</h2>
+                    <p class="lead">
+                        Our highly trained staff are ready to welcome new team members to grow our family of
+                        professionals who provide a high standard of care and service to our service recipients.
+                    </p>
+                    <p>
+                        You can explore available opportunities on the link below and submit an expression of interest
+                        if you would like to join our team:
+                    </p>
+                    <a href="#" class="btn btn-primary btn-lg mb-4">View Job Openings</a>
+                </div>
+            </div>
 
-    <!-- Expression of Interest Form -->
-    <section id="expression-of-interest">
-        <div class="container">
-            <h2>Submit an Expression of Interest</h2>
-            <form id="interest-form" action="#" method="POST" enctype="multipart/form-data">
-                <div class="form-group">
-                    <label for="name">Full Name</label>
-                    <input type="text" id="name" name="name" required>
+            <!-- Upload Section -->
+            <div class="row mt-5">
+                <div class="col-md-8 mx-auto">
+                    <h2 class="text-center mb-4">Submit Your Application</h2>
+                    <form>
+                        <div class="mb-3">
+                            <label for="fullName" class="form-label">Full Name</label>
+                            <input type="text" class="form-control" id="fullName" placeholder="Enter your full name"
+                                required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email Address</label>
+                            <input type="email" class="form-control" id="email" placeholder="Enter your email address"
+                                required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="phone" class="form-label">Phone Number</label>
+                            <input type="tel" class="form-control" id="phone" placeholder="Enter your phone number"
+                                required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="resume" class="form-label">Upload Resume</label>
+                            <input type="file" class="form-control" id="resume" accept=".pdf,.doc,.docx" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="coverLetter" class="form-label">Upload Cover Letter</label>
+                            <input type="file" class="form-control" id="coverLetter" accept=".pdf,.doc,.docx">
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Message (Optional)</label>
+                            <textarea class="form-control" id="message" rows="4"
+                                placeholder="Add any additional information"></textarea>
+                        </div>
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-primary btn-lg">Submit Application</button>
+                        </div>
+                    </form>
                 </div>
-                <div class="form-group">
-                    <label for="email">Email Address</label>
-                    <input type="email" id="email" name="email" required>
-                </div>
-                <div class="form-group">
-                    <label for="phone">Phone Number</label>
-                    <input type="tel" id="phone" name="phone" required>
-                </div>
-                <div class="form-group">
-                    <label for="message">Why do you want to join our team?</label>
-                    <textarea id="message" name="message" rows="5" required></textarea>
-                </div>
-                <div class="form-group">
-                    <label for="resume">Upload Your Resume (PDF, DOC, DOCX)</label>
-                    <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx" required>
-                </div>
-                <div class="form-group">
-                    <label for="additional-files">Upload Additional Documents (Optional)</label>
-                    <input type="file" id="additional-files" name="additional-files" accept=".pdf,.doc,.docx">
-                </div>
-                <button type="submit" class="cta-button">Submit</button>
-            </form>
+            </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer>
+    <footer class="bg-dark text-white text-center py-3">
         <div class="container">
-            <p>&copy; 2023 Bright Futures Children’s Home. All rights reserved.</p>
-            <div class="social-links">
-                <a href="#"><img src="facebook-icon.png" alt="Facebook"></a>
-                <a href="#"><img src="instagram-icon.png" alt="Instagram"></a>
-                <a href="#"><img src="twitter-icon.png" alt="Twitter"></a>
-            </div>
+            <p>&copy; 2023 Sunshine Children's Home. All rights reserved.</p>
         </div>
     </footer>
 
-    <script src="script.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>

@@ -132,3 +132,136 @@ footer {
 .services-section img {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
+
+/* FAQs Page Styles */
+.faqs-header {
+    background: url('images/faqs-bg.jpg') no-repeat center center/cover;
+    height: 50vh;
+    /* Adjust height as needed */
+    position: relative;
+}
+
+.faqs-header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    /* Dark overlay for better text visibility */
+}
+
+.faqs-header .container {
+    position: relative;
+    z-index: 1;
+    /* Ensure text is above the overlay */
+}
+
+.faqs-section .accordion-button {
+    font-weight: bold;
+    color: var(--dark);
+}
+
+.faqs-section .accordion-body {
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+.faqs-section ul {
+    list-style-type: disc;
+    padding-left: 1.5rem;
+}
+
+/* Join Our Team Page Styles */
+.join-us-header {
+    background: url('images/join-us-bg.jpg') no-repeat center center/cover;
+    height: 50vh;
+    /* Adjust height as needed */
+    position: relative;
+}
+
+.join-us-header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    /* Dark overlay for better text visibility */
+}
+
+.join-us-header .container {
+    position: relative;
+    z-index: 1;
+    /* Ensure text is above the overlay */
+}
+
+.join-us-section h2 {
+    color: var(--dark);
+    margin-bottom: 1.5rem;
+}
+
+.join-us-section p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+.join-us-section .btn-primary {
+    background-color: var(--primary);
+    border-color: var(--primary);
+}
+
+.join-us-section .btn-primary:hover {
+    background-color: var(--secondary);
+    border-color: var(--secondary);
+}
+
+/* Contact Us Page Styles */
+.contact-header {
+    background: url('images/contact-bg.jpg') no-repeat center center/cover;
+    height: 50vh;
+    /* Adjust height as needed */
+    position: relative;
+}
+
+.contact-header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    /* Dark overlay for better text visibility */
+}
+
+.contact-header .container {
+    position: relative;
+    z-index: 1;
+    /* Ensure text is above the overlay */
+}
+
+.contact-info-section h2 {
+    color: var(--dark);
+    margin-bottom: 1.5rem;
+}
+
+.contact-info-section p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+.contact-info-section a {
+    color: var(--primary);
+}
+
+.contact-info-section a:hover {
+    color: var(--secondary);
+}
+
+.google-maps-section iframe {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
