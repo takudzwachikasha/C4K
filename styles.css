@@ -55,3 +55,80 @@ body {
 footer {
     background-color: var(--dark);
 }
+
+.hero-section {
+    background: url('images/hero-bg.jpg') no-repeat center center/cover;
+    height: 100vh;
+    /* Full viewport height */
+    position: relative;
+}
+
+.hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    /* Dark overlay for better text visibility */
+}
+
+.hero-section .container {
+    position: relative;
+    z-index: 1;
+    /* Ensure text is above the overlay */
+}
+
+.hero-section h1 {
+    font-size: 3.5rem;
+    font-weight: bold;
+}
+
+.hero-section p {
+    font-size: 1.5rem;
+}
+
+/* Services Page Styles */
+.services-header {
+    background: url('images/services-bg.jpg') no-repeat center center/cover;
+    height: 50vh;
+    /* Adjust height as needed */
+    position: relative;
+}
+
+.services-header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    /* Dark overlay for better text visibility */
+}
+
+.services-header .container {
+    position: relative;
+    z-index: 1;
+    /* Ensure text is above the overlay */
+}
+
+.services-section h2 {
+    color: var(--dark);
+    margin-bottom: 1.5rem;
+}
+
+.services-section p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+.services-section ul {
+    list-style-type: disc;
+    padding-left: 1.5rem;
+}
+
+.services-section img {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
