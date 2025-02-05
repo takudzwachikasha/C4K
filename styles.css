@@ -307,3 +307,55 @@ footer {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+/* About Us Page Styles */
+.about-header {
+    background: url('images/about-bg.jpg') no-repeat center center/cover;
+    height: 50vh;
+    position: relative;
+}
+
+.about-header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.about-header .container {
+    position: relative;
+    z-index: 1;
+}
+
+.about-section h2 {
+    color: var(--dark);
+    margin-bottom: 1.5rem;
+}
+
+.about-section p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+.mission-section .card {
+    border: none;
+    transition: transform 0.3s ease;
+}
+
+.mission-section .card:hover {
+    transform: translateY(-10px);
+}
+
+.btn-primary {
+    background-color: var(--primary);
+    border-color: var(--primary);
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: var(--secondary);
+    border-color: var(--secondary);
+}
+
