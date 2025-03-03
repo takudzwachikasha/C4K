@@ -79,6 +79,29 @@ h6 {
     padding: 5rem 0;
 }
 
+.list-unstyled li {
+    font-size: 1.1rem;
+    /* Slightly larger font size */
+    color: #333;
+    /* Darker text color */
+    transition: transform 0.2s ease, color 0.2s ease;
+    /* Smooth hover effect */
+}
+
+.list-unstyled li:hover {
+    transform: translateX(5px);
+    /* Move text slightly to the right on hover */
+    color: #0056b3;
+    /* Change text color on hover */
+}
+
+.list-unstyled i {
+    font-size: 1.2rem;
+    /* Slightly larger icon size */
+    vertical-align: middle;
+    /* Align icon with text */
+}
+
 .about-section img,
 .programs-section .card img {
     border-radius: 10px;
